@@ -1,0 +1,138 @@
+<!--CREACIÓN DE TABLAS-->
+<html>
+    <!doctype html>
+    <html leng="es">
+
+    <!-- Una tabla es un conjunto de celdas, basicamente, de filas (horizontales) y columnas  (verticales). 
+    Tambien se conocen con el nombre de Matriz.
+    Las tablas más sencillas de HTML se definen con tres etiquetas:
+    <table> para crear la tabla,
+    <tr> para crear cada fila y
+    <td> para crear cada columna. 
+    La intersección entre una fila y una columna la denominamos "CELDA"
+    Tambien podemos identificar cada tabla asignandole un nombre en su ID (Identification)-->
+    <head>
+        <title>Creación de tablas</title>
+        <meta charset="uft8" >
+    </head>
+
+    <body>
+
+        <br>
+        <center> <h2>Ejemplos de tablas para diseño</h2></center>
+        <br>
+
+        <h3>Ejemplo 1: Tabla de 1 fila y 1 Columna</h3>
+
+        <!--Etiqueta BORDER, pone un borde, alrededor de las celdas-->
+
+        <Table ID="tabla 1" border>
+
+            <TR> <!--Definimos 1 fila-->
+                <td>CELDA 1 - TITULO </td> <!--Definimos 1 columna-->
+            </TR>
+        </Table>
+        <br>
+        <br>
+        <br>
+
+
+        <h3>Ejemplo 2: Tabla de 2 filas y 2 columnas</h3>
+
+        <table id="tabla 2" border>
+            <tr>
+                <td>CELDA 1 - TITULO</td>
+                <Td>CELDA 2 - TITULO</Td>
+            </tr>
+
+            <Tr>
+                <Td>CELDA 3 - TITULO</Td>
+                <Td>CELDA 4 - TITULO</Td>
+            </Tr>
+        </table>
+        <br>
+        <br>
+        <br>
+
+
+        <h3>Ejemplo 3: Tabla de 2 filas y 3 columnas, usando ROWSPAN en la celda 2</h3>
+
+        <!--Rowspan permite fusionar 2 celdas. En este ejemplo, la celda ocupara 2 celdas-->
+
+            <table id="tabla 3" border >
+                <tr>
+                    <td>CELDA 1 - TITULO </td>
+                    <Td ROWSPAN= 2 > CELDA 2 - TITULO </Td>
+                    <Td>CELDA 3 - TITULO</Td>
+                </tr>
+                
+                <Tr>
+                    <Td>CELDA 4 - TITULO </Td>
+                    <Td>CELDA 5 - TITULO </Td>
+                </Tr>
+            </table>
+            <br>
+            <br>
+            <br>
+
+
+            <h3>Ejemplo 4: Tabla de 3 filas y 3 columnas con ENCABEZADO </h3>
+
+            <!--La etiqueta TH define la celda como encabezado y resalta su titulo en "negrita"-->
+
+            <table ID="tabla 4" border  >
+                <tr>
+                    <th>ENCABEZADO 1 </th>
+                    <th>ENCABEZADO 2 </th>
+                    <th>ENCABEZADO 3 </th>
+                </tr>
+
+                <Tr>
+                    <Td>CELDA 4 </Td>
+                    <Td>CELDA 5 </Td>
+                    <Td>CELDA 6 </Td>
+                </Tr>
+
+                <Tr>
+                    <td>CELDA 7 </td>
+                    <Td>CELDA 8 </Td>
+                    <Td>CELDA 9 </Td>
+                </Tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            
+
+            <h3>Ejemplo 5: Tabla 3 filas y 3 columnas, con encabezado, imagenes, enlaces y usando COLSPAN</h3>
+            
+            <!--Se crea la tabla dentro de una etiqueta CENTER para centrarla-->
+
+            <center>
+            <table id="tabla 5" border>
+            <!--COLSPAN, misma funcion de ROWSPAN, ocupara 3 celdas para el titulo-->
+                <tr>
+                    <th colspan="3"><center><h2>Productos en Oferta</h2></center></th>
+                    <!--TH para q quede en "negrita" COLSPAN para fusionar 3 celdas, CENTER para centrar el nombre-->
+                </tr>
+
+                <tr>
+                    <!--Etiqueta CENTER para centrar el nombre en la celda-->
+                    <td><center>Libro Apocalipsis</center></td>
+                    <td><center>Muñeca</center></td>
+                    <td><center>Casa de Muñecas</center></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://www.antartica.cl/apocalipsis-9788497599412.html" target="_blank"><img src="Fotos/libro.jpg" width="150px" height="200" alt="Libro apocalipsis" ></a></td>
+                    <td><a href="https://www.lapolar.cl/ninos/juguetes/munecas-y-accesorios/" target="_blank"><img src="Fotos/muñeca.jpg" width="150px" height="200px" alt="Muñeca"></a></td>
+                    <td> <a href="https://simple.ripley.cl/casa-de-munecas-barbie-dreamhouse-2000385955405p?gclid=CjwKCAiA9qKbBhAzEiwAS4yeDeeCzW6e8l_EnqQEGRJ1Y3Llw_DKgfllYWDlQupC7IBa6WBtJYd-PxoCDK0QAvD_BwE&color_80=rosado&s=mdco" target="_blank"><img src="Fotos/casa barbie.jpg" alt="Casa de muñecas Barbie" width="170px" height="200px"></a></td>
+                </tr>
+            </table>
+            </center>
+            <br>
+            <br>
+            <br>
+
+        </body>
+</html>
